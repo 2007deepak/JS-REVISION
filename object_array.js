@@ -7,7 +7,6 @@ tea.push('Chamomile Tea');
 
 //problem: Remove "milk tea" from the list of teas.
  const  index = tea.indexOf('milk tea');
- //console.log(index); // 4
 if (index > -1) {
     tea.splice(index, 1);
 }
@@ -34,9 +33,38 @@ for(let i =0; i<=tea.length; i++)
 let caffeinatedCount = 0;
 for(let i =0; i<=tea.length; i++)
 {
-    if(tea !== "Herbale tea")
+    if(tea[i] !== "Herbale tea")
     {
         caffeinatedCount++;
     }
-    return caffeinatedCount;
+   
+}
+
+// problem: Use a for loop to create a new array with all tea names in uppercase.
+let uppercaseTeas=[];
+for(let i =0; i<=tea.length; i++)
+{
+   // uppercaseTeas.push(tea[i].toUpperCase())
+}
+
+// Problem: Use a for loop to find the tea name with the most charcters.
+
+let longestTea =""
+for(let i =0; i<tea.length; i++)
+{
+    if(tea[i].length > longestTea.length)
+    {
+        longestTea = tea[i];
+    }
+}
+
+//console.log(longestTea);
+
+//Problem: Use a for loop to reverse the order of the tea in the array.
+
+let reversedTea = [];
+
+for(let i = tea.length; i>=0; i--)
+{
+   reversedTea.push(tea[i]);
 }
