@@ -16,4 +16,7 @@ const person = {
     }
 
 }
-console.log(person.getFullName());
+//onsole.log(person.getFullName());
+console.log(person.address.city);
+console.log(person.address.state);
+
