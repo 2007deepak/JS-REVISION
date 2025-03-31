@@ -17,6 +17,33 @@ const person = {
 
 }
 //onsole.log(person.getFullName());
-console.log(person.address.city);
-console.log(person.address.state);
+//console.log(person.address.city);
+//console.log(person.address.state);
+
+const remote ={
+    color : "black",
+    brand : "LG",
+    price : 2000,
+    turnOff : function(){
+
+    },
+    turnOn : function(){
+        
+    }
+
+}
+
+let p1 = {
+fname : "Deepak",
+
+}
+let p2 = p1
+
+p2.fname = "Kumar"
+console.log(p1);
+console.log(p2);
+
+
+
+
 
